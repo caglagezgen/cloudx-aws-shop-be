@@ -1,0 +1,41 @@
+
+service: product-service
+# app and org for use with dashboard.serverless.com
+#app: your-app-name
+#org: your-org-name
+
+# You can pin your service to only deploy with a specific Serverless version
+# Check out our docs for more details
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: eu-west-1
+
+plugins:
+  - serverless-webpack
+  - serverless-jest-plugin
+
+custom:
+  webpack:
+    webpackConfig: 'webpack.config.js'
+    includeModules: true
+
+functions:
+  getProductList:
+    handler: /Users/caglagezgen/Documents/Learn-Epam/aws-cloudx-js/cloudx-aws-shop-be/src/handlers/get-products-list/get-product-list.getProductList
+    events:
+      - http:
+          path: api/get-product-list
+          method: get
+          cors: true
+          get-products:
+  getProductsListById:
+    handler: /Users/caglagezgen/Documents/Learn-Epam/aws-cloudx-js/cloudx-aws-shop-be/src/handlers/get-products-list-by-id/get-products-list-by-id.getProductsListById
+    events:
+      - http:
+          path: api/get-product-list/{id}
+          method: get
+          cors: true
