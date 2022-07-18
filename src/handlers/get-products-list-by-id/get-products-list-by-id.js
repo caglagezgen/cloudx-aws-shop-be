@@ -3,7 +3,7 @@ import { createErrorResponse, createSuccessResponse } from '../../utils/api-resp
 
 import { CAR_PRODUCTS } from "../../mocks/products";
 
-export const getProductsListById = async (event) => {
+export const handler = async (event) => {
   const { id } = event.pathParameters;
 
   if (isNaN(id) || id < 0) { // simple check for sandbox project.

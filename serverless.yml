@@ -25,7 +25,7 @@ custom:
 
 functions:
   getProductList:
-    handler: /Users/caglagezgen/Documents/Learn-Epam/aws-cloudx-js/cloudx-aws-shop-be/src/handlers/get-products-list/get-product-list.getProductList
+    handler: src/handlers/get-products-list/get-product-list.handler
     events:
       - http:
           path: api/get-product-list
@@ -33,7 +33,7 @@ functions:
           cors: true
           get-products:
   getProductsListById:
-    handler: /Users/caglagezgen/Documents/Learn-Epam/aws-cloudx-js/cloudx-aws-shop-be/src/handlers/get-products-list-by-id/get-products-list-by-id.getProductsListById
+    handler: src/handlers/get-products-list-by-id/get-products-list-by-id.handler
     events:
       - http:
           path: api/get-product-list/{id}
