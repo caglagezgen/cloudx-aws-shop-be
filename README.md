@@ -9,7 +9,7 @@
 - Product Service - list one: https://ckd7jd8kx4.execute-api.eu-west-1.amazonaws.com/dev/api/get-product-list/{id}
 * Backend Repo:  https://github.com/caglagezgen/cloudx-aws-shop-be
 * Front End:  https://d2ypzn6w69g9c5.cloudfront.net/
-* Front End Repo:  https://d2ypzn6w69g9c5.cloudfront.net/
+* Front End Repo:  https://github.com/caglagezgen/shop-react-redux-cloudfront
 * Front End PR: https://github.com/EPAM-JS-Competency-center/shop-react-redux-cloudfront/pull/158
 
 * Done 18.07.2022 / deadline 18.07.2022
